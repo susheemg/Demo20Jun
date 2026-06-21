@@ -4,6 +4,28 @@ All notable changes to this platform are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com) · Versioning: [SemVer](https://semver.org)
 (MAJOR = breaking schema/API change · MINOR = new features · PATCH = fixes only)
 
+## [4.5.1] — 2026-06-21 · Methodology folder governs BRO Chat & ProAssess
+
+### Changed
+- **Single methodology source for all AI assessors.** BRO Chat and ProAssess are
+  now guided by the firm's methodology in the **Methodology folder** (the active
+  `methodology_doc` rows / Methodology Library). The LangGraph 8-stage ProAssess
+  representation previously used a static built-in constant; it now resolves the
+  same `methodology.methodology_directive(session)` the conversational and
+  autonomous AI paths use, so every AI assessor is governed by one authoritative
+  methodology (with an identical best-practice fallback when the folder is empty).
+- **Navigation.** The **Methodology** item is moved to the top of the menu
+  (admin-only); the **Documents** item moves down into Monitor & Manage. This
+  reflects that the Methodology folder governs assessment behaviour, while
+  Documents holds per-vendor evidence.
+
+### Docs
+- SOP (SOP-08, SOP-13) updated: ProAssess and BRO Chat are explicitly governed by
+  the Methodology folder; the Documents-vs-Methodology distinction is documented.
+- Technical documentation (§3.2) updated with the methodology-grounding data path
+  and the resolver functions across the conversational, autonomous and LangGraph
+  paths.
+
 ## [4.5.0] — 2026-06-15 · Dashboards, Learnings, reports & BRO Chat UX
 
 ### Added
