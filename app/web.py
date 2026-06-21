@@ -790,7 +790,7 @@ _PAGE = r"""<!DOCTYPE html>
       <nav id="nav" role="navigation" aria-label="Primary">
         <div class="nav-group">
           <a data-v="home" class="active"><span class="ico">🏠</span>Home</a>
-          <a data-v="documents"><span class="ico">🗂️</span>Documents</a>
+          <a data-v="methodology" id="navMethodology" style="display:none"><span class="ico">📐</span>Methodology</a>
           <a data-v="dashboards"><span class="ico">📊</span>Dashboards</a>
           <a data-v="learnings"><span class="ico">🧠</span>Learnings</a>
           <a data-v="dashboard"><span class="ico">📈</span>Snapshot</a>
@@ -809,6 +809,7 @@ _PAGE = r"""<!DOCTYPE html>
         </div>
         <div class="nav-group"><div class="nav-group-label">Monitor &amp; Manage</div>
           <a data-v="vendor360"><span class="ico">◎</span>Vendor 360</a>
+          <a data-v="documents"><span class="ico">🗂️</span>Documents</a>
           <a data-v="performance"><span class="ico">📈</span>Performance</a>
           <a data-v="slamgmt"><span class="ico">📋</span>SLA Management</a>
           <a data-v="perfissues"><span class="ico">⚠️</span>Performance Issues</a>
@@ -842,7 +843,6 @@ _PAGE = r"""<!DOCTYPE html>
           <a data-v="boardpack"><span class="ico">📑</span>Board / Regulator Pack</a>
           <a data-v="reports"><span class="ico">📁</span>Reports</a>
           <a data-v="aireports"><span class="ico">🤖</span>AI Reports</a>
-          <a data-v="methodology" id="navMethodology" style="display:none"><span class="ico">📐</span>Methodology</a>
           <a data-v="evidence"><span class="ico">🛡️</span>Evidence on Demand</a>
           <a data-v="lifecycle"><span class="ico">♻️</span>Lifecycle</a>
           <a data-v="governance"><span class="ico">§</span>Governance</a>

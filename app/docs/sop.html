@@ -302,6 +302,7 @@ strong{font-weight:700}
 <div class="section" id="proassess">
   <div class="section-hdr"><span class="sec-tag">SOP-08</span><h2>ProAssess 8-stage assessment process</h2></div>
   <p>Eight sequential stages; each has a designated lead agent, defined inputs, a defined output, and a system action. All stages run deterministically offline; a live AI model enriches each stage when configured.</p>
+  <div class="callout sys"><div class="ico">&#128208;</div><div class="ct"><strong>Guided by the Methodology folder</strong>Both ProAssess and BRO&nbsp;Chat assess <em>strictly under the firm&rsquo;s methodology</em> held in the <strong>Methodology folder</strong> (the Methodology&nbsp;Library, top of the menu, admin-managed). At assessment time the active methodology document(s) are injected into every AI stage as the authoritative directive that overrides general defaults. If no methodology is loaded, both fall back to recognised best practice (PRA&nbsp;SS2/21, EBA Outsourcing, DORA, FSB toolkit, NIST&nbsp;SP&nbsp;800-161). Maintain the methodology in the Methodology&nbsp;Library &mdash; <em>not</em> the general Documents area, which holds per-vendor evidence and does not steer the methodology.</div></div>
   <div class="callout sys"><div class="ico">&#9881;</div><div class="ct"><strong>Handoff limit</strong>Within any stage a lead agent may hand off to one specialist (maximum 2 handoffs per stage). The lead agent writes the final stage output regardless of handoffs. All handoffs logged to session transcript.</div></div>
   <table class="dt">
     <tr><th>Stage</th><th>Name</th><th>Lead agent</th><th>Human input</th><th>Key output</th><th>Auto-record action</th></tr>
@@ -408,6 +409,7 @@ strong{font-weight:700}
 
 <div class="section" id="documents">
   <div class="section-hdr"><span class="sec-tag">SOP-13</span><h2>Document handling</h2></div>
+  <p>The <strong>Documents</strong> area (under Monitor &amp; Manage) holds per-vendor and per-engagement <em>evidence</em> &mdash; certificates, contracts, policies, questionnaire responses. It is distinct from the <strong>Methodology folder / Library</strong> (top of menu, admin-only), which holds the firm&rsquo;s assessment methodology that guides BRO&nbsp;Chat and ProAssess. Evidence goes in Documents; the methodology that governs how evidence is assessed goes in the Methodology&nbsp;Library.</p>
   <table class="dt">
     <tr><th>Rule</th><th>Detail</th></tr>
     <tr><td>Permitted types</td><td>pdf, docx, xlsx, pptx, csv, txt, md, json, png, jpg/jpeg, zip, eml, msg</td></tr>
